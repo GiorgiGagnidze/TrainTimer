@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/new_exercise_margin"
+            android:hint="@string/name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlist_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/new_exercise_margin"
+            android:hint="@string/playlist"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/song_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/new_exercise_margin"
+            android:hint="@string/song"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/more"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/new_exercise_margin"
+            android:hint="@string/more_info"/>
+
+        <RadioGroup
+            android:id="@+id/music"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_radio"
+                android:layout_margin="@dimen/new_exercise_margin"
+                />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/playlist_radio"
+                android:layout_margin="@dimen/new_exercise_margin"
+                />
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_music_radio"
+                android:layout_margin="@dimen/new_exercise_margin"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/relax_time_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/new_exercise_margin"
+                android:text="@string/relax_time"
+                android:textAllCaps="false"
+                android:onClick="showRelaxTimeDialog"/>
+            <Button
+                android:id="@+id/new_set_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/new_exercise_margin"
+                android:text="@string/new_set"
+                android:textAllCaps="false"
+                android:onClick="showNewSetDialog"/>
+            <Button
+                android:id="@+id/submit_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/new_exercise_margin"
+                android:text="@string/submit"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_background">@android:color/background_light</color>
+    <color name="text_dark_color">@android:color/background_dark</color>
+    <color name="light_background">@android:color/holo_blue_light</color>
+</resources>

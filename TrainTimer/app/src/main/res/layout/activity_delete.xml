@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/round_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_finally"
+        android:src="@android:drawable/ic_delete"
+        android:layout_margin="@dimen/controls_margin"
+        android:onClick="delete"/>
+
+    <EditText
+        android:id = "@+id/search_to_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint = "@string/hint"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapWords"
+        android:layout_toRightOf="@+id/delete_finally"
+        android:layout_above="@+id/to_delete_list_view"
+        android:layout_margin="@dimen/controls_margin"/>
+
+
+    <ListView
+        android:id="@+id/to_delete_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/delete_finally">
+
+    </ListView>
+</RelativeLayout>
